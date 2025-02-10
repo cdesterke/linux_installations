@@ -1,0 +1,8 @@
+wine winefile 
+
+
+# place source uncompress in the folder
+
+devtools::build(binary = TRUE)
+
+# the windows binary is in the folder higher
