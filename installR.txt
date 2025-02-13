@@ -1,0 +1,14 @@
+sudo apt update && sudo apt upgrade
+
+sudo apt install curl dirmngr apt-transport-https ca-certificates software-properties-common
+
+curl -fSsL https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/cran.gpg >> /dev/null
+
+echo deb [signed-by=/usr/share/keyrings/cran.gpg] https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/ | sudo tee /etc/apt/sources.list.d/cran.list
+
+sudo apt update
+
+sudo apt install r-base
+
+ sudo apt install r-base r-base-dev
+
