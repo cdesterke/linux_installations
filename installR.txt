@@ -6,9 +6,27 @@ curl -fSsL https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | su
 
 echo deb [signed-by=/usr/share/keyrings/cran.gpg] https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/ | sudo tee /etc/apt/sources.list.d/cran.list
 
-sudo apt update
+
 
 sudo apt install r-base
 
  sudo apt install r-base r-base-dev
+ 
+ sudo apt install libcurl4-openssl-dev
+ 
+ sudo apt install libssl-dev
 
+sudo apt install libxml2-dev
+
+sudo apt install libfontconfig1-dev
+
+sudo apt install libharfbuzz-dev libfribidi-dev
+
+sudo apt install libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+
+## R
+install.packages("devtools")
+install.packages("tidyverse")
+install.packages("BiocManager")
+install.packages("pamr",type="source")
+install.packages(c("glmnet","caret"))
