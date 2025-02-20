@@ -2,3 +2,18 @@ sudo apt install brasero
 
 ## disk boot usb
 sudo apt install usb-creator-common usb-creator-gtk
+
+
+sudo apt install audacity
+
+sudo apt install vlc
+
+sudo apt install inkscape
+
+sudo apt install libdvdcss2
+sudo add-apt-repository multiverse
+sudo apt install libdvd-pkg
+sudo dpkg-reconfigure libdvd-pkg
+sudo apt install kaffeine
+
+
