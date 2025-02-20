@@ -1,1 +1,4 @@
+sudo apt install brasero
 
+## disk boot usb
+sudo apt install usb-creator-common usb-creator-gtk
