@@ -9,3 +9,18 @@ sudo apt update
 sudo apt install winehq-stable
 
 winecfg
+
+
+wine rtools44-6094-6039.exe
+wine R-4.4.0-win.exe
+
+## .bashrc
+export PATH="$PATH:/path/to/R/bin"
+export PATH="$PATH:/path/to/rtools44/bin"
+export PATH="$PATH:/path/to/rtools44/mingw_64/bin"
+
+
+wine R CMD INSTALL --build nom_du_package.tar.gz
+
+nano ~/.Renviron
+LANG=fr_FR.UTF-8
